@@ -1,0 +1,11 @@
+@startuml
+class Camera{
+DetectGraf()
+DetectRobot()
+SignalRobotHome()
+GiveRobotCoordinates()
+}
+class Robot{
+Engine
+}
+Camera o- Robot :has
