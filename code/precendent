@@ -1,0 +1,12 @@
+@startuml
+actor User
+participant Camera
+participant Robot
+Robot -> Robot : Engine()
+User -> Camera : PressOn
+User -> Camera : PressOff
+Camera -> Robot: DetectGraf()
+Camera -> Robot: DetectRobot()
+Camera -> Robot: SignalRobotHome()
+Camera -> Robot: GiveRobotCoordinates()
+@enduml
