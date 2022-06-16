@@ -1,0 +1,19 @@
+@startuml
+class camera
+class graffiti
+class robotEng
+
+class graffiti
+class user
+
+camera -right-> graffiti: detected
+camera -right- robotEng : cordinates
+camera -right- robotEng : detected
+camera -right- robotEng : home
+robotEng -right-> graffiti: go 
+camera -- robotEng : have >
+
+
+
+user --> camera: pressbutton
+@enduml
